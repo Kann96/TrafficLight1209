@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,49 +13,52 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLight1209" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="gPA-2O-zhi">
-                                <rect key="frame" x="96" y="75" width="200" height="704"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="p0s-OV-h1r">
+                                <rect key="frame" x="137.66666666666666" y="92" width="100" height="342"/>
                                 <subviews>
                                     <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2w-vw-5CR">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                     </view>
                                     <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gmn-OW-jct">
-                                        <rect key="frame" x="0.0" y="226" width="200" height="200"/>
+                                        <rect key="frame" x="0.0" y="121" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
                                     <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KVK-dX-lPL">
-                                        <rect key="frame" x="0.0" y="452" width="200" height="184"/>
+                                        <rect key="frame" x="0.0" y="242" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2g-Yh-GtO">
-                                        <rect key="frame" x="0.0" y="662" width="200" height="42"/>
-                                        <color key="backgroundColor" red="0.15254336269999999" green="0.35604471319999997" blue="0.7365861547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="START"/>
-                                        <connections>
-                                            <action selector="startButtonTupped" destination="BYZ-38-t0r" eventType="touchUpInside" id="ilY-7X-Yz1"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Gmn-OW-jct" firstAttribute="top" secondItem="gPA-2O-zhi" secondAttribute="top" constant="226" id="75h-C1-6VO"/>
-                                    <constraint firstItem="KVK-dX-lPL" firstAttribute="top" secondItem="gPA-2O-zhi" secondAttribute="top" constant="452" id="i47-92-HgV"/>
+                                    <constraint firstAttribute="width" constant="100" id="GqY-qq-ukX"/>
+                                    <constraint firstAttribute="height" constant="342" id="yLK-6l-U3o"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2g-Yh-GtO">
+                                <rect key="frame" x="87.666666666666686" y="676" width="200" height="42"/>
+                                <color key="backgroundColor" red="0.15254336269999999" green="0.35604471319999997" blue="0.7365861547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="jfj-Lb-jsA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START"/>
+                                <connections>
+                                    <action selector="startButtonTupped" destination="BYZ-38-t0r" eventType="touchUpInside" id="ilY-7X-Yz1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gPA-2O-zhi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="CSi-Ae-UzD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gPA-2O-zhi" secondAttribute="trailing" constant="97" id="ecR-Dn-HNJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gPA-2O-zhi" secondAttribute="bottom" constant="39" id="gZX-HZ-JTW"/>
-                            <constraint firstItem="gPA-2O-zhi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="zZK-Z9-GQE"/>
+                            <constraint firstItem="f2g-Yh-GtO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BZL-AA-l3q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f2g-Yh-GtO" secondAttribute="bottom" constant="60" id="DTu-mw-Bxh"/>
+                            <constraint firstItem="p0s-OV-h1r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QpY-lq-2se"/>
+                            <constraint firstItem="p0s-OV-h1r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="sXt-A0-fGp"/>
                         </constraints>
                     </view>
                     <connections>
@@ -67,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="135" y="3.1690140845070425"/>
         </scene>
     </scenes>
     <resources>
